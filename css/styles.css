@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+  background-color: blueviolet;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 537px;
+  margin-top: 70px;
+  padding: 44px 43px 50px 43px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(212, 200, 184);
+  /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); */
+}
+
+.checkbox-label{
+  display: inline-flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 31px;
+  cursor: pointer;
+}
+.checkbox-label h2{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.checkbox-label-span{
+  display: inline-flex;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 1px;
+  margin-right: 16px;
+  border-radius: 5px;
+}
+
+.checkbox:focus + .checkbox-label-span{
+  box-shadow: 0 0 0 2px blue ;
+}
+.checkbox:checked + .table-tennis{
+  background-image: url(../img/table-tennis.png);
+  background-position: center center;
+  background-size: contain 20px 22px;
+  background-repeat: no-repeat;
+}
+.checkbox:checked + .basketbol{
+  background-image: url(../img/basketball.png);
+  background-position: center center;
+  background-size: contain 20px 22px;
+  background-repeat: no-repeat;
+}
+.checkbox:checked + .voleybol{
+  background-image: url(../img/voleyball.png);
+  background-position: center center;
+  background-size: contain 20px 22px;
+  background-repeat: no-repeat;
+}
+.checkbox:checked + .hokkey{
+  background-image: url(../img/hokkey.png);
+  background-position: center center;
+  background-size: contain 20px 22px;
+  background-repeat: no-repeat;
+}
+ .hokkey-box:disabled ~ .hokkey-text{
+   opacity: 0.3;
+ }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+}
